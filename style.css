@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 09;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(blue, pink);
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid rgb(6, 126, 237);
+    background: linear-gradient(blue, pink);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    animation: bolo 3s forwards;
+    opacity: 0;
+}
+
+header .img1 {
+    width: 100px;
+
+}
+header .img{
+    width: 50px;
+}
+
+header input {
+    border-radius: 30px;
+    border: none;
+    padding: 20px 10px;
+    font-weight: bolder;
+}
+
+header button {
+    border-radius: 30px;
+    border: none;
+    padding: 20px 40px;
+    font-weight: bolder;
+}
+
+.img {
+    width: 80px;
+}
+
+@keyframes bolo {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media(max-width:768px) {
+    header button {
+        display: none;
+    }
+
+    header input {
+        display: none;
+    }
+}
